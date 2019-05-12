@@ -23,11 +23,11 @@ router.patch('/todos/:id', auth, todos.updateTodo)
 router.delete('/todos/:id', auth, todos.deleteTodo)
 
 // Rutas para articulos
-router.get('/articulos', auth, articulos.getAllArticles)
-router.get('/articulos/acrylics', auth, articulos.getAcrylics)
-router.get('/articulos/cards', auth, articulos.getCards)
-router.get('/articulos/foils', auth, articulos.getFoils)
-router.get('/articulos/marbled', auth, articulos.getMarbled)
+router.get('/articulos', articulos.getAllArticles)
+router.get('/articulos/acrylics', articulos.getAcrylics)
+router.get('/articulos/cards', articulos.getCards)
+router.get('/articulos/foils', articulos.getFoils)
+router.get('/articulos/marbled', articulos.getMarbled)
 router.post('/articulos', auth, articulos.createArticle)
 
 router.get('/cart', auth, articulos.getCart)
